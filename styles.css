@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: black;
+}
+body {
+  position: relative;
+}
+.container {
+  position: sticky;
+  top: 0;
+  right: 5px;
+  left: 5px;
+  background-color: rgb(255, 255, 255);
+}
+/*
+--
+ Top Nav Bar
+--
+*/
+.tnb {
+  display: grid;
+  grid-template-columns: 56px 3fr 1.2fr 0.5fr 3.8fr;
+  gap: 8px;
+}
+/* Logo */
+.logo-container {
+  padding: 6px;
+}
+.logo {
+  width: 43px;
+  height: 37px;
+}
+/* Nav Bar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 18px 17px;
+}
+.nav-item:hover {
+  color: #eee;
+  background-color: #04aa6d;
+  fill: #eee;
+}
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search-input {
+  height: 36px;
+  width: 100%;
+  border: solid 1px gray;
+  border-radius: 20px;
+  padding: 12px;
+  font-style: italic;
+}
+.search-input:focus {
+  border-width: 3px;
+  border-color: #04aa6d;
+  outline: none;
+  font-style: normal;
+}
+.search-icon {
+  height: 34px;
+  width: 34px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 1px;
+}
+.search-icon:hover {
+  background-color: #f1f1f1;
+}
+/* Dark Mode */
+.dark-mode-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px;
+}
+.dark-mode-btn {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  padding: 9px;
+}
+.dark-mode-btn:hover {
+  background-color: #f1f1f1;
+}
+/* Top Right Nav Bar */
+.tnb-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: auto;
+  position: relative;
+}
+/* Top Right Nav Bar Links */
+.tnb-right-links-container {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tnb-right-link {
+  padding: 8px 12px;
+}
+.tnb-right-link:hover {
+  background-color: #f1f1f1;
+  height: 40px;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+.tnb-right-icon {
+  stroke: #9763f6;
+}
+/* Top Right Nav Bar Buttons */
+.tnb-right-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  background-color: #d9eee1;
+  color: #333;
+}
+.login {
+  padding-left: 50px;
+  margin-left: 32px;
+}
+.signup {
+  position: absolute;
+  right: 80px;
+  z-index: 2;
+  background-color: #04aa6d;
+  color: #eee;
+}
+.signup:hover,
+.login:hover {
+  background-color: #059862;
+  color: #eee;
+  cursor: pointer;
+}
+/* 
+--
+Sub Nav Bar
+--
+*/
+.snb-scroll {
+  background-color: #04aa6d;
+}
+.snb-item-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #282a35;
+}
+.snb-item {
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 6px 14px !important;
+  display: flex;
+  align-items: center;
+}
+.snb-item:hover {
+  background-color: #000;
+}
